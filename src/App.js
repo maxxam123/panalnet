@@ -8,9 +8,9 @@ import {
 } from 'react-router-dom';
 import Sidebar from './components/sidebar/Sidebar';
 import Home from './pages/home/Home';
-// import { useContext } from 'react';
-// import { AuthContext } from './context/authContext/AuthContext';
-// import { Login } from './pages/login/Login';
+import { useContext } from 'react';
+import { AuthContext } from './context/authContext/AuthContext';
+import { Login } from './pages/login/Login';
 import Topbar from './components/topbar/Topbar';
 import { UserList } from './pages/userList/UserList';
 import { User } from './pages/user/User';
@@ -23,13 +23,13 @@ import { NewList } from './pages/newList/NewList';
 import { List2 } from './pages/listList/List2';
 
 function App() {
-  // const { user } = useContext(AuthContext);
-  const user = true;
+  const { user } = useContext(AuthContext);
+  // const user = true;
 
   return (
     <Router>
       <Switch>
-        {/* <Route path="/login">{user ? <Redirect to="/" /> : <Login />}</Route> */}
+        <Route path="/login">{user ? <Redirect to="/" /> : <Login />}</Route>
         {user && (
           <>
             <Topbar />

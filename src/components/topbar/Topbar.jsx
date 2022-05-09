@@ -1,15 +1,15 @@
 import { NotificationsNone } from '@material-ui/icons';
-// import { useContext } from 'react';
-// import { logout } from '../../context/authContext/apiCalls';
-// import { AuthContext } from '../../context/authContext/AuthContext';
+import { useContext } from 'react';
+import { logout } from '../../context/authContext/apiCalls';
+import { AuthContext } from '../../context/authContext/AuthContext';
 import './topbar.css';
 
 export default function Topbar() {
-  // const { dispatch } = useContext(AuthContext);
+  const { dispatch } = useContext(AuthContext);
 
   const handleClick = (e) => {
     e.preventDefault();
-    // logout(dispatch);
+    logout(dispatch);
   };
 
   return (
