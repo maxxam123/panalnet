@@ -12,9 +12,9 @@ import Home from './pages/home/Home';
 // import { AuthContext } from './context/authContext/AuthContext';
 // import { Login } from './pages/login/Login';
 import Topbar from './components/topbar/Topbar';
-// import { UserList } from './pages/userList/UserList';
-// import { User } from './pages/user/User';
-// import { NewUser } from './pages/newUser/NewUser';
+import { UserList } from './pages/userList/UserList';
+import { User } from './pages/user/User';
+import { NewUser } from './pages/newUser/NewUser';
 // import { ProductList } from './pages/productList/ProductList';
 // import { Product } from './pages/product/Product';
 // import { NewProduct } from './pages/newProduct/NewProduct';
@@ -38,7 +38,7 @@ function App() {
               <Route exact path="/">
                 <Home />
               </Route>
-              {/* <Route path="/users">
+              <Route path="/users">
                 <UserList />
               </Route>
               <Route path="/user/:userId">
@@ -47,7 +47,7 @@ function App() {
               <Route path="/newUser">
                 <NewUser />
               </Route>
-              <Route path="/products">
+              {/* <Route path="/products">
                 <ProductList />
               </Route>
               <Route path="/product/:productsId">
@@ -55,8 +55,8 @@ function App() {
               </Route>
               <Route path="/newProduct">
                 <NewProduct />
-              </Route>
-              <Route path="/lists">
+              </Route> */}
+              {/* <Route path="/lists">
                 <List2 />
               </Route>
               <Route path="/list/:listsId">
