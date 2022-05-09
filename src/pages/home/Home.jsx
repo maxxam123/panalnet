@@ -1,11 +1,10 @@
-// import { Chart } from '../../components/chart/Chart';
-// import { FeaturedInfo } from '../../components/featuredInfo/FeaturedInfo';
+import { Chart } from '../../components/chart/Chart';
+import { FeaturedInfo } from '../../components/featuredInfo/FeaturedInfo';
 import './home.css';
 // import { WidgetLg } from '../../components/widgetLg/WidgetLg';
 import { useEffect, useMemo, useState } from 'react';
 import axios from 'axios';
-// import { WidgetSm } from '../../components/widgetSm/WidgetSm';
-// import { WidgetLg } from '../../components/widgetLg/WidgetLg';
+import { WidgetSm } from '../../components/widgetSm/WidgetSm';
 
 export default function Home() {
   const [userStats, setUserStats] = useState([]);
@@ -62,16 +61,16 @@ export default function Home() {
 
   return (
     <div className="home">
-      {/* <FeaturedInfo /> */}
-      {/* <Chart
+      <FeaturedInfo />
+      <Chart
         data={userStats}
         // data={userData}
         title="User Analytics"
         grid
         dataKey="Active User"
-      /> */}
+      />
       <div className="homeWidget">
-        {/* <WidgetSm /> */}
+        <WidgetSm />
         {/* <WidgetLg /> */}
       </div>
     </div>
