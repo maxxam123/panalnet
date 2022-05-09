@@ -15,9 +15,9 @@ import Topbar from './components/topbar/Topbar';
 import { UserList } from './pages/userList/UserList';
 import { User } from './pages/user/User';
 import { NewUser } from './pages/newUser/NewUser';
-// import { ProductList } from './pages/productList/ProductList';
-// import { Product } from './pages/product/Product';
-// import { NewProduct } from './pages/newProduct/NewProduct';
+import { ProductList } from './pages/productList/ProductList';
+import { Product } from './pages/product/Product';
+import { NewProduct } from './pages/newProduct/NewProduct';
 // import { List } from './pages/list/List';
 // import { NewList } from './pages/newList/NewList';
 // import { List2 } from './pages/listList/List2';
@@ -47,7 +47,7 @@ function App() {
               <Route path="/newUser">
                 <NewUser />
               </Route>
-              {/* <Route path="/products">
+              <Route path="/products">
                 <ProductList />
               </Route>
               <Route path="/product/:productsId">
@@ -55,7 +55,7 @@ function App() {
               </Route>
               <Route path="/newProduct">
                 <NewProduct />
-              </Route> */}
+              </Route>
               {/* <Route path="/lists">
                 <List2 />
               </Route>
