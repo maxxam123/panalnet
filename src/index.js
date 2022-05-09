@@ -5,16 +5,16 @@ import { UserContextProvider } from './context/userContext/UserContext';
 import { MovieContextProvider } from './context/movieContext/MovieContext';
 // import { AuthContextProvider } from './context/authContext/AuthContext';
 // import { SlidersContextProvider } from './context/sliderContext/SlidersContext';
-// import { ListContextProvider } from './context/listContext/ListsContext';
+import { ListContextProvider } from './context/listContext/ListsContext';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <AuthContextProvider> */}
     <MovieContextProvider>
       <UserContextProvider>
-        {/* <ListContextProvider> */}
-        <App />
-        {/* </ListContextProvider> */}
+        <ListContextProvider>
+          <App />
+        </ListContextProvider>
       </UserContextProvider>
     </MovieContextProvider>
     {/* </AuthContextProvider> */}

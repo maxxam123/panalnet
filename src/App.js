@@ -18,9 +18,9 @@ import { NewUser } from './pages/newUser/NewUser';
 import { ProductList } from './pages/productList/ProductList';
 import { Product } from './pages/product/Product';
 import { NewProduct } from './pages/newProduct/NewProduct';
-// import { List } from './pages/list/List';
-// import { NewList } from './pages/newList/NewList';
-// import { List2 } from './pages/listList/List2';
+import { List } from './pages/list/List';
+import { NewList } from './pages/newList/NewList';
+import { List2 } from './pages/listList/List2';
 
 function App() {
   // const { user } = useContext(AuthContext);
@@ -56,7 +56,7 @@ function App() {
               <Route path="/newProduct">
                 <NewProduct />
               </Route>
-              {/* <Route path="/lists">
+              <Route path="/lists">
                 <List2 />
               </Route>
               <Route path="/list/:listsId">
@@ -64,7 +64,7 @@ function App() {
               </Route>
               <Route path="/newList">
                 <NewList />
-              </Route> */}
+              </Route>
             </div>
           </>
         )}
